@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.link, .logo-title{
+    text-decoration: none;
+}
+
+/* NAVBAR RESPONSIVE */
+
+.navbar {
+    width: 100%;
+    background: #000;
+    position: sticky;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    padding: 13px 10px;
+    color: white;
+    text-align: center;
+}
+
+.link {
+    color: rgb(165, 165, 165);
+}
+
+.link:hover {
+    color: white;
+}
+
+.toggle, #hamburger {
+    display: none;
+}
+
+/* TEXTOS */
+
+.title-1 {
+    font-family: 'Open Sans', sans-serif;
+    width: 600;
+    font-size: 50px;
+    margin: 20px auto;
+}
+
+.text-1 {
+    font-family: 'Poppins', sans-serif;
+    width: 500;
+    font-size: 17px;
+    margin: 20px auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.shadow-white {
+    text-shadow: 0 0 5px #fff;
+}
+
+/* Main content */
+
+.bg-home {
+    background-image: url("../assets/bg-home.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.header-text {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.center-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-icon {
+    padding: 10px;
+}
+
+.social-icon a {
+    color: #000;
+    text-decoration: none;
+}
+
+.social-icon a:hover {
+    color: grey;
+}
+
+@media only screen and (max-width: 375px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* MENU RESPONSIVE */
+    .menu-item {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+    }
+
+    .toggle {
+        display: inline-block;
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navbar input:checked ~ .menu { display: block; }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    
+}
