@@ -90,11 +90,36 @@
 /* Main content */
 
 .bg-home {
+    position: relative;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3); /* If our image is bright, we can tone it down with this darker overlay */
+}
+
+.bg-home::after {
+    content: "";
+    position: absolute;
     background-image: url("../assets/bg-home.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    -webit-filter: blur(20px) grayscale(20%);
+    filter: blur(20px) grayscale(20%); /* Go wild! */
 }
+
+.parallax {
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 .p-relative {
     position: relative;
@@ -138,7 +163,7 @@
 }
 
 .social-icon a:hover {
-    color: grey;
+    color: antiquewhite;
 }
 
 @media only screen and (max-width: 375px) {
